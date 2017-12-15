@@ -1,26 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A278a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o9g-F8-w83">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Menlo.ttc">
+            <string>Menlo-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--First-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="breakpoint_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
+                                <rect key="frame" x="112.5" y="312" width="150.5" height="43"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
+                                <rect key="frame" x="90.5" y="363" width="194.5" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -44,18 +56,20 @@
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="breakpoint_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
+                                <rect key="frame" x="87" y="312" width="201.5" height="43"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
+                                <rect key="frame" x="80" y="363" width="215" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -75,6 +89,189 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="360"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="x2h-KI-1IN">
+            <objects>
+                <viewController id="0QO-HC-yfq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oQS-xu-eqQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBGImage" translatesAutoresizingMaskIntoConstraints="NO" id="0PO-EQ-dlw">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0PO-EQ-dlw" secondAttribute="height" multiplier="1:1" id="1A4-lB-tpd"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_breakpoint" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ga-IF-Rcm">
+                                <rect key="frame" x="108" y="50" width="159" height="28"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="24"/>
+                                <color key="textColor" red="0.74901960784313726" green="0.81176470588235294" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LOp-sI-d4k">
+                                <rect key="frame" x="20" y="160" width="335" height="367"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="o0l-ew-Ylx">
+                                        <rect key="frame" x="20" y="20" width="295" height="327"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XD8-2i-LtU">
+                                                <rect key="frame" x="0.0" y="0.0" width="295" height="57.5"/>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
+                                                <color key="textColor" red="0.23921568627450979" green="0.52941176470588236" blue="0.58039215686274503" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mGf-Qp-RWD">
+                                                <rect key="frame" x="0.0" y="67.5" width="295" height="57.5"/>
+                                                <color key="backgroundColor" red="0.26274509800000001" green="0.35686274509999999" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                                <state key="normal" title="LOGIN WITH FB">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Muv-k1-AJa">
+                                                <rect key="frame" x="0.0" y="135" width="295" height="57"/>
+                                                <color key="backgroundColor" red="0.80784313725490198" green="0.32941176470588235" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                                <state key="normal" title="LOGIN WITH G+">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Vq-00-Mgb">
+                                                <rect key="frame" x="0.0" y="202" width="295" height="57.5"/>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
+                                                <color key="textColor" red="0.23921568630000001" green="0.52941176469999995" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caI-KE-BLJ">
+                                                <rect key="frame" x="0.0" y="269.5" width="295" height="57.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
+                                                <state key="normal" title=" by email" image="emailIcon">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.15294117647058825" green="0.18823529411764706" blue="0.19215686274509802" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="o0l-ew-Ylx" firstAttribute="leading" secondItem="LOp-sI-d4k" secondAttribute="leading" constant="20" id="038-Bn-aV1"/>
+                                    <constraint firstAttribute="trailing" secondItem="o0l-ew-Ylx" secondAttribute="trailing" constant="20" id="EMA-FS-fkk"/>
+                                    <constraint firstAttribute="bottom" secondItem="o0l-ew-Ylx" secondAttribute="bottom" constant="20" id="U4Q-v4-z56"/>
+                                    <constraint firstItem="o0l-ew-Ylx" firstAttribute="top" secondItem="LOp-sI-d4k" secondAttribute="top" constant="20" id="UDI-bj-WjY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.16470588235294117" green="0.16862745098039217" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="LOp-sI-d4k" firstAttribute="leading" secondItem="YeM-Qq-JAQ" secondAttribute="leading" constant="20" id="5e9-83-kRP"/>
+                            <constraint firstItem="0PO-EQ-dlw" firstAttribute="top" secondItem="oQS-xu-eqQ" secondAttribute="top" id="FDD-RQ-GT8"/>
+                            <constraint firstItem="LOp-sI-d4k" firstAttribute="top" secondItem="YeM-Qq-JAQ" secondAttribute="top" constant="140" id="IDH-95-6gj"/>
+                            <constraint firstItem="YeM-Qq-JAQ" firstAttribute="trailing" secondItem="LOp-sI-d4k" secondAttribute="trailing" constant="20" id="KUT-yk-3et"/>
+                            <constraint firstItem="YeM-Qq-JAQ" firstAttribute="bottom" secondItem="LOp-sI-d4k" secondAttribute="bottom" constant="140" id="Kab-LV-qBW"/>
+                            <constraint firstItem="0PO-EQ-dlw" firstAttribute="trailing" secondItem="YeM-Qq-JAQ" secondAttribute="trailing" id="MLR-Zk-bGS"/>
+                            <constraint firstItem="7ga-IF-Rcm" firstAttribute="centerX" secondItem="oQS-xu-eqQ" secondAttribute="centerX" id="ekn-bF-OR5"/>
+                            <constraint firstItem="0PO-EQ-dlw" firstAttribute="leading" secondItem="YeM-Qq-JAQ" secondAttribute="leading" id="omV-Sx-BsZ"/>
+                            <constraint firstItem="7ga-IF-Rcm" firstAttribute="top" secondItem="YeM-Qq-JAQ" secondAttribute="top" constant="30" id="otF-Dq-dmX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YeM-Qq-JAQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zn7-fG-qUa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1626" y="0.0"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="LJZ-eC-upO">
+            <objects>
+                <viewController id="o9g-F8-w83" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MFm-FZ-rjZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBGImage" translatesAutoresizingMaskIntoConstraints="NO" id="uBt-GX-Zcr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uBt-GX-Zcr" secondAttribute="height" multiplier="1:1" id="Jgp-AF-EvM"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_breakpoint" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZA-q9-P2r">
+                                <rect key="frame" x="108" y="30" width="159" height="28"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="24"/>
+                                <color key="textColor" red="0.74901960779999999" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kGA-jp-ORp" customClass="ShadowView" customModule="breakpoint_app" customModuleProvider="target">
+                                <rect key="frame" x="20" y="160" width="335" height="367"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="b7k-UE-bnD">
+                                        <rect key="frame" x="20" y="20" width="295" height="267"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_email sign in" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5b-1n-KLJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="295" height="59.5"/>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
+                                                <color key="textColor" red="0.23921568630000001" green="0.52941176469999995" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r3w-el-d11" customClass="InsetTextField" customModule="breakpoint_app" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="69.5" width="295" height="59"/>
+                                                <color key="backgroundColor" red="0.1647058824" green="0.16862745100000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.74901960779999999" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mw9-rs-2Ep" customClass="InsetTextField" customModule="breakpoint_app" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="138.5" width="295" height="59.5"/>
+                                                <color key="backgroundColor" red="0.1647058824" green="0.16862745100000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.74901960779999999" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8UL-sx-LTZ">
+                                                <rect key="frame" x="0.0" y="208" width="295" height="59"/>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
+                                                <state key="normal" title="SIGN IN">
+                                                    <color key="titleColor" red="0.23921568630000001" green="0.52941176469999995" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Smb-b7-CRc">
+                                        <rect key="frame" x="8" y="8" width="21" height="22"/>
+                                        <state key="normal" image="close"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1529411765" green="0.18823529410000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="b7k-UE-bnD" secondAttribute="bottom" constant="80" id="6nZ-Wn-1Qd"/>
+                                    <constraint firstItem="Smb-b7-CRc" firstAttribute="leading" secondItem="kGA-jp-ORp" secondAttribute="leading" constant="8" id="JQt-gQ-Hex"/>
+                                    <constraint firstItem="b7k-UE-bnD" firstAttribute="leading" secondItem="kGA-jp-ORp" secondAttribute="leading" constant="20" id="fgg-5n-d6I"/>
+                                    <constraint firstItem="Smb-b7-CRc" firstAttribute="top" secondItem="kGA-jp-ORp" secondAttribute="top" constant="8" id="r64-Nb-h2J"/>
+                                    <constraint firstItem="b7k-UE-bnD" firstAttribute="top" secondItem="kGA-jp-ORp" secondAttribute="top" constant="20" id="rv3-Ok-IdH"/>
+                                    <constraint firstAttribute="trailing" secondItem="b7k-UE-bnD" secondAttribute="trailing" constant="20" id="voW-yR-IGe"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1647058824" green="0.16862745100000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="pBN-zp-Alc" firstAttribute="trailing" secondItem="kGA-jp-ORp" secondAttribute="trailing" constant="20" id="2qd-4S-fAT"/>
+                            <constraint firstItem="uBt-GX-Zcr" firstAttribute="leading" secondItem="pBN-zp-Alc" secondAttribute="leading" id="DWZ-kX-cdH"/>
+                            <constraint firstItem="IZA-q9-P2r" firstAttribute="centerX" secondItem="MFm-FZ-rjZ" secondAttribute="centerX" id="H0L-0S-TdI"/>
+                            <constraint firstItem="kGA-jp-ORp" firstAttribute="leading" secondItem="pBN-zp-Alc" secondAttribute="leading" constant="20" id="OYi-xE-enj"/>
+                            <constraint firstItem="IZA-q9-P2r" firstAttribute="top" secondItem="MFm-FZ-rjZ" secondAttribute="top" constant="30" id="P6W-tZ-ZRL"/>
+                            <constraint firstItem="pBN-zp-Alc" firstAttribute="bottom" secondItem="kGA-jp-ORp" secondAttribute="bottom" constant="140" id="ccn-ZJ-nqs"/>
+                            <constraint firstItem="uBt-GX-Zcr" firstAttribute="top" secondItem="MFm-FZ-rjZ" secondAttribute="top" id="eul-Ly-1nA"/>
+                            <constraint firstItem="uBt-GX-Zcr" firstAttribute="trailing" secondItem="pBN-zp-Alc" secondAttribute="trailing" id="gcO-NK-Ad5"/>
+                            <constraint firstItem="kGA-jp-ORp" firstAttribute="top" secondItem="pBN-zp-Alc" secondAttribute="top" constant="140" id="y5Z-bA-zwP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pBN-zp-Alc"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EsM-gK-pUM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-862" y="0.0"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -96,7 +293,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="close" width="21" height="20"/>
+        <image name="emailIcon" width="25" height="16"/>
         <image name="first" width="30" height="30"/>
+        <image name="loginBGImage" width="375" height="284"/>
         <image name="second" width="30" height="30"/>
     </resources>
 </document>
