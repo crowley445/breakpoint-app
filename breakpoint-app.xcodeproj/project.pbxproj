@@ -9,12 +9,17 @@
 /* Begin PBXBuildFile section */
 		5850A196CA9657805E5AA2FA /* Pods_breakpoint_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A432AC00D0984FCFE5164CD7 /* Pods_breakpoint_app.framework */; };
 		888762621FE406A50024CD3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888762611FE406A50024CD3A /* AppDelegate.swift */; };
-		888762641FE406A50024CD3A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888762631FE406A50024CD3A /* FirstViewController.swift */; };
-		888762661FE406A50024CD3A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888762651FE406A50024CD3A /* SecondViewController.swift */; };
+		888762641FE406A50024CD3A /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888762631FE406A50024CD3A /* FeedViewController.swift */; };
+		888762661FE406A50024CD3A /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888762651FE406A50024CD3A /* GroupViewController.swift */; };
 		888762691FE406A50024CD3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 888762671FE406A50024CD3A /* Main.storyboard */; };
 		8887626B1FE406A50024CD3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8887626A1FE406A50024CD3A /* Assets.xcassets */; };
 		8887626E1FE406A50024CD3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8887626C1FE406A50024CD3A /* LaunchScreen.storyboard */; };
 		8887627B1FE413DD0024CD3A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8887627A1FE413DD0024CD3A /* GoogleService-Info.plist */; };
+		88EAD9A01FE7DA4D00A2D9E6 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EAD99F1FE7DA4D00A2D9E6 /* AuthService.swift */; };
+		88EAD9A21FE7EC3A00A2D9E6 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EAD9A11FE7EC3A00A2D9E6 /* AuthViewController.swift */; };
+		88EAD9A41FE7EC6C00A2D9E6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EAD9A31FE7EC6C00A2D9E6 /* LoginViewController.swift */; };
+		88EAD9A61FE80E4F00A2D9E6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EAD9A51FE80E4F00A2D9E6 /* ProfileViewController.swift */; };
+		88EAD9A81FE8178400A2D9E6 /* CreatePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EAD9A71FE8178400A2D9E6 /* CreatePostViewController.swift */; };
 		88F98DC21FE4172700A70F28 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F98DC11FE4172700A70F28 /* Constants.swift */; };
 		88F98DC41FE418E000A70F28 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F98DC31FE418E000A70F28 /* DataService.swift */; };
 		88F98DC61FE42B3600A70F28 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F98DC51FE42B3600A70F28 /* InsetTextField.swift */; };
@@ -25,13 +30,18 @@
 		10F736A47410C070070E004B /* Pods-breakpoint-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breakpoint-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-breakpoint-app/Pods-breakpoint-app.debug.xcconfig"; sourceTree = "<group>"; };
 		8887625E1FE406A50024CD3A /* breakpoint-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "breakpoint-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		888762611FE406A50024CD3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		888762631FE406A50024CD3A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		888762651FE406A50024CD3A /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		888762631FE406A50024CD3A /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		888762651FE406A50024CD3A /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
 		888762681FE406A50024CD3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8887626A1FE406A50024CD3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8887626D1FE406A50024CD3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8887626F1FE406A50024CD3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8887627A1FE413DD0024CD3A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		88EAD99F1FE7DA4D00A2D9E6 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		88EAD9A11FE7EC3A00A2D9E6 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		88EAD9A31FE7EC6C00A2D9E6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		88EAD9A51FE80E4F00A2D9E6 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		88EAD9A71FE8178400A2D9E6 /* CreatePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewController.swift; sourceTree = "<group>"; };
 		88F98DC11FE4172700A70F28 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		88F98DC31FE418E000A70F28 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		88F98DC51FE42B3600A70F28 /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
@@ -101,8 +111,12 @@
 		888762751FE411850024CD3A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				888762631FE406A50024CD3A /* FirstViewController.swift */,
-				888762651FE406A50024CD3A /* SecondViewController.swift */,
+				888762631FE406A50024CD3A /* FeedViewController.swift */,
+				888762651FE406A50024CD3A /* GroupViewController.swift */,
+				88EAD9A11FE7EC3A00A2D9E6 /* AuthViewController.swift */,
+				88EAD9A31FE7EC6C00A2D9E6 /* LoginViewController.swift */,
+				88EAD9A51FE80E4F00A2D9E6 /* ProfileViewController.swift */,
+				88EAD9A71FE8178400A2D9E6 /* CreatePostViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -127,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				88F98DC31FE418E000A70F28 /* DataService.swift */,
+				88EAD99F1FE7DA4D00A2D9E6 /* AuthService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -278,13 +293,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				888762661FE406A50024CD3A /* SecondViewController.swift in Sources */,
+				888762661FE406A50024CD3A /* GroupViewController.swift in Sources */,
 				888762621FE406A50024CD3A /* AppDelegate.swift in Sources */,
-				888762641FE406A50024CD3A /* FirstViewController.swift in Sources */,
+				888762641FE406A50024CD3A /* FeedViewController.swift in Sources */,
 				88F98DC21FE4172700A70F28 /* Constants.swift in Sources */,
 				88F98DC41FE418E000A70F28 /* DataService.swift in Sources */,
 				88F98DC61FE42B3600A70F28 /* InsetTextField.swift in Sources */,
+				88EAD9A61FE80E4F00A2D9E6 /* ProfileViewController.swift in Sources */,
 				88F98DC81FE42E2200A70F28 /* ShadowView.swift in Sources */,
+				88EAD9A21FE7EC3A00A2D9E6 /* AuthViewController.swift in Sources */,
+				88EAD9A41FE7EC6C00A2D9E6 /* LoginViewController.swift in Sources */,
+				88EAD9A81FE8178400A2D9E6 /* CreatePostViewController.swift in Sources */,
+				88EAD9A01FE7DA4D00A2D9E6 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
