@@ -25,4 +25,20 @@ class DataService {
             completion(true)
         }
     }
+    
+    func getAllFeedMessages( handler: @escaping (_ messages: [Message]) -> () ) {
+        REF_FEED.observeSingleEvent(of: .value) { (feedMessageSnapshot) in
+            guard let feedMessageSnapshot = feedMessageSnapshot.children.allObjects as? [DataSnapshot] else { return }
+            
+            var messageArray = [Message]()
+            
+            for message in feedMessageSnapshot {
+                let content = message.childSnapshot(forPath: "content").value as! String
+                let senderId = message.childSnapshot(forPath: "senderId").value as! String
+                let message = Message(senderId: senderId, content: content)
+                messageArray.append(message)
+            }
+            handler(messageArray)
+        }
+    }
 }

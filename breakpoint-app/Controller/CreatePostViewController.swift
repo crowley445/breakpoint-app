@@ -21,13 +21,17 @@ class CreatePostViewController: UIViewController {
         super.viewDidLoad()
         textView.delegate = self
         meassagePlaceholder = textView.text
+        
+        let sndBtn = getButtonForInputAccessoryView(withTitle: " SEND", andImage: UIImage(named: "send"))
+        sndBtn.addTarget(self, action: #selector(CreatePostViewController.send), for: UIControlEvents.touchUpInside)
+        textView.inputAccessoryView = sndBtn
     }
 
     @IBAction func closeButtonPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-    
-    @IBAction func sendButtonPressed(_ sender: Any) {
+
+    @objc func send() {
         guard let message = textView.text, textView.text != "", textView.text != meassagePlaceholder else { return }
         DataService.instance.uploadPost(withMessage: message, forUID: (Auth.auth().currentUser?.uid)!, andGroupKey: nil) { (success) in
             if success {
