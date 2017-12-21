@@ -26,6 +26,11 @@ class CreatePostViewController: UIViewController {
         sndBtn.addTarget(self, action: #selector(CreatePostViewController.send), for: UIControlEvents.touchUpInside)
         textView.inputAccessoryView = sndBtn
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        emailLabel.text = Auth.auth().currentUser?.email 
+    }
 
     @IBAction func closeButtonPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)

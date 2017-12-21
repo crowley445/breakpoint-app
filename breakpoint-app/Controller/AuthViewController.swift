@@ -7,12 +7,19 @@
 //
 
 import UIKit
+import Firebase
 
 class AuthViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if Auth.auth().currentUser != nil {
+            dismiss(animated: true, completion: nil)
+        }
     }
     
     @IBAction func facebookLoginPressed(_ sender: Any) {

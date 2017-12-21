@@ -41,4 +41,62 @@ class DataService {
             handler(messageArray)
         }
     }
+    
+    func getUserEmail(withUID uid: String, completion: @escaping(_ email: String) -> ()) {
+        REF_USERS.observeSingleEvent(of: .value) { (userSnapShot) in
+            guard let userSnapShot = userSnapShot.children.allObjects as? [DataSnapshot] else { return }
+            for user in userSnapShot {
+                if user.key == uid {
+                    completion(user.childSnapshot(forPath: "email").value as! String)
+                }
+            }
+        }
+    }
+    
+    func getEmail(forQuery query: String, completion: @escaping(_ emailArray: [String]) -> ()) {
+        var emailArray = [String]()
+        
+        REF_USERS.observe(.value) { (userSnapShot) in
+            guard let userSnapShot = userSnapShot.children.allObjects as? [DataSnapshot] else { return }
+            for user in userSnapShot {
+                let email = user.childSnapshot(forPath: "email").value as! String
+                let username = email.components(separatedBy: "@")[0]
+                
+                if username.contains(query) && email != Auth.auth().currentUser?.email{
+                    emailArray.append(email)
+                }
+            }
+            completion(emailArray)
+        }
+    }
+    
+    func getUIDs(withUsernames usernames: [String], completion: @escaping (_ UIDArray: [String]) -> ()) {
+        
+        REF_USERS.observe(.value) { (userSnapShot) in
+            guard let userSnapShot = userSnapShot.children.allObjects as? [DataSnapshot] else { return }
+            var UIDArray = [String]()
+            
+            for user in userSnapShot {
+                let email = user.childSnapshot(forPath: "email").value as! String
+                if usernames.contains(email) {
+                    UIDArray.append(user.key)
+                }
+            }
+            
+            completion(UIDArray)
+        }
+    }
+    
+    func createGroup(withTitle title: String, andDescription description: String, forUserIds ids: [String], completion: @escaping(_ success: Bool) -> ()) {
+        REF_GROUPS.childByAutoId().updateChildValues(["title": title, "description": description, "members": ids])
+        completion(true)
+    }
 }
+
+
+
+
+
+
+
+

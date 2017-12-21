@@ -24,7 +24,7 @@ class FeedViewController: UIViewController {
         super.viewDidAppear(animated)
         
         DataService.instance.getAllFeedMessages { (returnedMessages) in
-            self.messageArray = returnedMessages
+            self.messageArray = returnedMessages.reversed()
             print("MESSAGES: \(self.messageArray.count)")
             self.tableView.reloadData()
         }
@@ -45,7 +45,9 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "feedCell", for: indexPath) as? FeedCell else { return UITableViewCell()}
         let defaultImage = UIImage(named: "defaultProfileImage")
         let message = messageArray[indexPath.row]
-        cell.configureCell(withImage: defaultImage!, withEmail: message.senderId, andMessage: message.content)
+        DataService.instance.getUserEmail(withUID: message.senderId) { (email) in
+            cell.configureCell(withImage: defaultImage!, withEmail: email, andMessage: message.content)
+        }
         return cell
     }
 }
