@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class NewGroupViewController: UIViewController {
 
@@ -47,8 +48,10 @@ class NewGroupViewController: UIViewController {
     
     @IBAction func doneButtonPressed(_ sender: Any) {
         if titleTextField.text == "" || groupMembersTextField.text == "" { return }
-        DataService.instance.getUIDs(withUsernames: choosenUserArray) { (ids) in
-            DataService.instance.createGroup(withTitle: self.titleTextField.text!, andDescription: self.titleTextField.text!, forUserIds: ids, completion: { (succes) in
+        DataService.instance.getUIDs(withUsernames: choosenUserArray) { (returnedIDsArray) in
+            var userIds = returnedIDsArray
+            userIds.append((Auth.auth().currentUser?.uid)!)
+            DataService.instance.createGroup(withTitle: self.titleTextField.text!, andDescription: self.descriptionTextField.text!, forUserIds: userIds, completion: { (success) in
                 self.dismiss(animated: true, completion: nil)
             })
         }

@@ -29,6 +29,11 @@
 		88F98DC41FE418E000A70F28 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F98DC31FE418E000A70F28 /* DataService.swift */; };
 		88F98DC61FE42B3600A70F28 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F98DC51FE42B3600A70F28 /* InsetTextField.swift */; };
 		88F98DC81FE42E2200A70F28 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F98DC71FE42E2200A70F28 /* ShadowView.swift */; };
+		88FBAB931FFB93C60045C62D /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FBAB921FFB93C60045C62D /* GroupCell.swift */; };
+		88FBAB951FFB98960045C62D /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FBAB941FFB98960045C62D /* Group.swift */; };
+		88FBAB971FFBC1990045C62D /* GroupFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FBAB961FFBC1990045C62D /* GroupFeedCell.swift */; };
+		88FBAB991FFBC2E30045C62D /* GroupFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FBAB981FFBC2E30045C62D /* GroupFeedViewController.swift */; };
+		88FBAB9B1FFBC4DB0045C62D /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FBAB9A1FFBC4DB0045C62D /* ViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +61,11 @@
 		88F98DC31FE418E000A70F28 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		88F98DC51FE42B3600A70F28 /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
 		88F98DC71FE42E2200A70F28 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		88FBAB921FFB93C60045C62D /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
+		88FBAB941FFB98960045C62D /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		88FBAB961FFBC1990045C62D /* GroupFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupFeedCell.swift; sourceTree = "<group>"; };
+		88FBAB981FFBC2E30045C62D /* GroupFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupFeedViewController.swift; sourceTree = "<group>"; };
+		88FBAB9A1FFBC4DB0045C62D /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		A432AC00D0984FCFE5164CD7 /* Pods_breakpoint_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_breakpoint_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE52F1D440A643D7CFD89099 /* Pods-breakpoint-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breakpoint-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-breakpoint-app/Pods-breakpoint-app.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,6 +138,7 @@
 				88EAD9A51FE80E4F00A2D9E6 /* ProfileViewController.swift */,
 				88EAD9A71FE8178400A2D9E6 /* CreatePostViewController.swift */,
 				884817331FEBDF7B008B472B /* NewGroupViewController.swift */,
+				88FBAB981FFBC2E30045C62D /* GroupFeedViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -139,6 +150,8 @@
 				88F98DC71FE42E2200A70F28 /* ShadowView.swift */,
 				885090301FE9468800CE1C9C /* FeedCell.swift */,
 				884817351FEBE32D008B472B /* MemberCell.swift */,
+				88FBAB921FFB93C60045C62D /* GroupCell.swift */,
+				88FBAB961FFBC1990045C62D /* GroupFeedCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -147,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				885090321FE949CF00CE1C9C /* Message.swift */,
+				88FBAB941FFB98960045C62D /* Group.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -164,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				8850902C1FE9356D00CE1C9C /* ViewControllerExtension.swift */,
+				88FBAB9A1FFBC4DB0045C62D /* ViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -314,13 +329,18 @@
 				888762641FE406A50024CD3A /* FeedViewController.swift in Sources */,
 				88F98DC21FE4172700A70F28 /* Constants.swift in Sources */,
 				88F98DC41FE418E000A70F28 /* DataService.swift in Sources */,
+				88FBAB9B1FFBC4DB0045C62D /* ViewExtension.swift in Sources */,
+				88FBAB991FFBC2E30045C62D /* GroupFeedViewController.swift in Sources */,
+				88FBAB951FFB98960045C62D /* Group.swift in Sources */,
 				88F98DC61FE42B3600A70F28 /* InsetTextField.swift in Sources */,
 				885090311FE9468800CE1C9C /* FeedCell.swift in Sources */,
 				884817361FEBE32D008B472B /* MemberCell.swift in Sources */,
+				88FBAB931FFB93C60045C62D /* GroupCell.swift in Sources */,
 				88EAD9A61FE80E4F00A2D9E6 /* ProfileViewController.swift in Sources */,
 				88F98DC81FE42E2200A70F28 /* ShadowView.swift in Sources */,
 				88EAD9A21FE7EC3A00A2D9E6 /* AuthViewController.swift in Sources */,
 				88EAD9A41FE7EC6C00A2D9E6 /* LoginViewController.swift in Sources */,
+				88FBAB971FFBC1990045C62D /* GroupFeedCell.swift in Sources */,
 				885090331FE949CF00CE1C9C /* Message.swift in Sources */,
 				884817341FEBDF7B008B472B /* NewGroupViewController.swift in Sources */,
 				88EAD9A81FE8178400A2D9E6 /* CreatePostViewController.swift in Sources */,
